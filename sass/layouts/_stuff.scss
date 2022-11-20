@@ -1,0 +1,76 @@
+.stuff {
+    background-color: var(--section-background);
+}
+
+.stuff-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include desktop{
+    flex-wrap: nowrap;
+    }
+}
+
+.stuff-item {
+    width: 100%;
+    max-width: 270px;
+    @include tablet{
+    max-width: 354px;
+    }
+    @include mobile{
+    max-width: 450px;
+    }
+    @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+    flex-basis: calc((100% - 90px) / 4);
+    }
+    font-size: 0;
+    background: var(--basic-white);
+    box-shadow: var(--box-stuff-shadow);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.stuff-name {
+    margin-bottom: 10px;
+
+    color: var(--header-link);
+    font-weight: 500;
+    
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.stuff-position {
+    margin: 0;
+    color: var(--basic-color);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team-box {
+    padding: 24px 15px;
+    @include mobile{
+    padding: 24px 122px;
+    }
+    @include tablet{
+    padding: 24px 74px;
+    }
+    @include desktop {
+    padding: 30px 32px;
+    }
+}
+
+/* посилання на соціальні мережі */
+.social-link-list {
+    display: flex;
+    gap: 10px;
+}

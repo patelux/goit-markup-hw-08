@@ -1,0 +1,70 @@
+.hero {
+    background-color: var(--hero-background);
+    text-align: center; 
+}
+
+.overlay {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url('../images/hero1px-mob.jpg');
+    @include retina{
+        background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url('../images/hero2px-mob.jpg');
+            }
+    @include tablet{
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url('../images/hero1px-tab.jpg');
+    @include retina{
+        background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url('../images/hero2px-tab.jpg');
+    }}   
+    @include desktop{
+    height: 600px;
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url('../images/hero-image.jpg');
+    @include retina{
+        background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url('../images/hero-image2x.jpg');
+    }}
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #757575;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
+}
+
+.hero__title {
+    color: var(--basic-white);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 300px;
+    @include mobile{
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.36;
+    }
+    @include desktop{
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.hero__btn {
+    padding: 10px 24px;
+    @include desktop{
+    padding: 10px 32px;
+    }
+}

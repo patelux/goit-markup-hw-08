@@ -1,0 +1,44 @@
+.clients__clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    @include desktop{
+    flex-wrap: nowrap;
+    }
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.clients__clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 51px;
+    @include tablet {
+    padding: 15px 59px;
+    }
+    @include desktop {
+    padding: 15px 31px;
+    }
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: color var(--transition-func), border-color var(--transition-func);
+&:hover, &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+}
+
+.clients__icon-client {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+&:hover, &:focus {
+    fill: currentColor;
+}
+}
+
+
+
