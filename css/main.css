@@ -793,7 +793,7 @@ body {
 @media screen and (min-width: 1200px) {
   .features-item {
     flex-basis: calc((100% - 90px) / 4);
-    width: 270px;
+    max-width: 270px;
   }
 }
 
