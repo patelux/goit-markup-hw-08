@@ -762,7 +762,6 @@ body {
 }
 
 .features .container {
-  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -773,6 +772,7 @@ body {
 }
 
 .features-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
