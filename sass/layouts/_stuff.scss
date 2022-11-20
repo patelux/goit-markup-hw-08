@@ -1,37 +1,35 @@
 .stuff {
-    background-color: var(--section-background);
+background-color: var(--section-background);
+   width: 100%;
 }
 
-.stuff-list {
+.team-card, .stuff-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px;    
     @include desktop{
     flex-wrap: nowrap;
-    }
-}
+    }}
 
 .stuff-item {
-    width: 100%;
-    max-width: 270px;
-    @include tablet{
-    max-width: 354px;
-    }
-    @include mobile{
+    width:100%;
     max-width: 450px;
-    }
     @include tablet {
     flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
     }
-
     @include desktop {
     flex-basis: calc((100% - 90px) / 4);
-    }
+    max-width: 270px;}
+
     font-size: 0;
     background: var(--basic-white);
     box-shadow: var(--box-stuff-shadow);
     border-radius: 0px 0px 4px 4px;
+& img{
+    max-width: 100%;
+    height: auto;
 }
 
 .stuff-name {
@@ -57,7 +55,7 @@
 }
 
 .team-box {
-    padding: 24px 15px;
+    padding: 24px 5px;
     @include mobile{
     padding: 24px 122px;
     }
@@ -73,4 +71,5 @@
 .social-link-list {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }

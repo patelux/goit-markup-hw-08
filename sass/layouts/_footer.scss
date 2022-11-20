@@ -1,24 +1,25 @@
-footer >.container {
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--hero-background);    
+}
+footer>.container {
     width: 100%;
     @include desktop {
         max-width: 1200px;
     }
     display: flex;
     flex-direction: column;
-    
+
     justify-content: center;
     text-align: center;
     gap:60px;
 
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--hero-background);
-    @include desktop{
+    @include desktop {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
     }
-           
 }
 .footer__box-top{
     display: flex;
@@ -172,7 +173,8 @@ footer .icon-social-link {
 }
 
 .send-box-input {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     @include desktop{
     width: 358px;        
     }

@@ -8,6 +8,7 @@
 .main-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -98,8 +99,6 @@
 }    
     }
 
-
-
 .contact-nav .item {
     align-items: center;
 }
@@ -170,7 +169,6 @@
         background-color: transparent;
         border-style: none;
         @include tablet{
-        position: absolute;
         width: 1px;
         height: 1px;
         margin: -1px;
