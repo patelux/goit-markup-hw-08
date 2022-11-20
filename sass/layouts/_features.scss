@@ -20,8 +20,9 @@
     @include tablet{
     flex-basis: calc((100% - 30px) / 2);    
     }
-    @include desktop{
-    width: 270px; }
+    @include desktop
+    {
+    width: 270px;}
 }
 
 .features-icon {
@@ -36,15 +37,6 @@
     border-radius: 4px;
     padding-bottom: 25px;
     padding-top: 25px;
-    // @include mobile {
-    // padding: 25px 190px;
-    // }
-    // @include tablet {
-    // padding: 25px 142px;
-    // }
-    // @include desktop{
-    // padding: 25px 100px;   
-    // }
 }
 
 .features-title {
