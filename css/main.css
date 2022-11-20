@@ -792,7 +792,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .features-item {
-    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
+    max-height: 270px;
   }
 }
 
