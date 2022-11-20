@@ -1,4 +1,5 @@
-.features {
+.features .container{
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     @include desktop{    
@@ -15,16 +16,18 @@
 }
 
 .features-item {
-    width: 100%;
+    // width: 100%;
     @include tablet{
     flex-basis: calc((100% - 30px) / 2);    
     }
     @include desktop{
     flex-basis: calc((100% - 90px) / 4);
-}
+    width: 270px; }
 }
 
 .features-icon {
+    width: 100%;
+    max-width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -32,17 +35,17 @@
     margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    @include mobile {
-    padding: 25px;
-    }
-    @include tablet {
-    padding: 25px;
-    }
-    @include desktop{
-    padding: 25px; 
-    width: 270px;     
-    }
-
+    padding-bottom: 25px;
+    padding-top: 25px;
+    // @include mobile {
+    // padding: 25px 190px;
+    // }
+    // @include tablet {
+    // padding: 25px 142px;
+    // }
+    // @include desktop{
+    // padding: 25px 100px;   
+    // }
 }
 
 .features-title {

@@ -761,12 +761,13 @@ body {
   }
 }
 
-.features {
+.features .container {
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .features {
+  .features .container {
     padding-top: 94px;
   }
 }
@@ -782,9 +783,6 @@ body {
   }
 }
 
-.features-item {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .features-item {
     flex-basis: calc((100% - 30px) / 2);
@@ -793,10 +791,13 @@ body {
 @media screen and (min-width: 1200px) {
   .features-item {
     flex-basis: calc((100% - 90px) / 4);
+    width: 270px;
   }
 }
 
 .features-icon {
+  width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -804,22 +805,8 @@ body {
   margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
-}
-@media screen and (min-width: 480px) {
-  .features-icon {
-    padding: 25px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features-icon {
-    padding: 25px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-icon {
-    padding: 25px;
-    width: 270px;
-  }
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .features-title {
@@ -920,24 +907,16 @@ body {
 
 .stuff-item {
   width: 100%;
+  max-width: 450px;
   font-size: 0;
   background: var(--basic-white);
   box-shadow: var(--box-stuff-shadow);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 480px) {
-  .stuff-item {
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .stuff-item {
-    max-width: 354px;
-  }
-}
 @media screen and (min-width: 768px) {
   .stuff-item {
     flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -949,27 +928,6 @@ body {
 .stuff-item img {
   max-width: 100%;
   height: auto;
-}
-@media screen and (min-width: 480px) {
-  .stuff-item img {
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .stuff-item img {
-    max-width: 354px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .stuff-item img {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .stuff-item img {
-    flex-basis: calc((100% - 90px) / 4);
-    max-width: 270px;
-  }
 }
 
 .stuff-name {
