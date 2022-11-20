@@ -22,7 +22,7 @@
     }
     @include desktop
     {flex-basis: calc((100% - 90px) / 4);
-    max-height: 270px;
+    max-width: 270px;
 }}
 
 .features-icon {
